@@ -1,0 +1,29 @@
+{
+  "name": "fetch-cassette-kit",
+  "version": "0.1.0",
+  "description": "Record and replay fetch calls in tests with secret-aware JSON fixtures",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saivarun1410/fetch-cassette-kit.git"
+  },
+  "homepage": "https://github.com/saivarun1410/fetch-cassette-kit#readme",
+  "bugs": "https://github.com/saivarun1410/fetch-cassette-kit/issues",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": ["src", "README.md", "LICENSE"],
+  "engines": {"node": ">=20"},
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/index.js && node --test",
+    "pack:check": "npm pack --dry-run"
+  },
+  "keywords": ["fetch", "record", "replay", "fixtures", "testing", "http", "vcr"],
+  "license": "MIT"
+}
